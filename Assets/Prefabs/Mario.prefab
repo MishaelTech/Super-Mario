@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1946050481735439380}
   - component: {fileID: 3199677391241969258}
+  - component: {fileID: 6282647915635743459}
+  - component: {fileID: 2306320281166344245}
   m_Layer: 3
   m_Name: Small
   m_TagString: Untagged
@@ -26,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2834644683841509058}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.25, z: 0}
+  m_LocalPosition: {x: -0, y: -0.257, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -84,6 +86,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6282647915635743459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834644683841509058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6c24ac8b87959498b6160950150b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: 5847565d7815e964db543f5534ec1faf, type: 3}
+  jump: {fileID: 21300000, guid: c5ea96fa4d4537d49abae740604d7a4f, type: 3}
+  slide: {fileID: 21300000, guid: cf88bc12dd1e81147b1fba04a601e0de, type: 3}
+  run: {fileID: 2306320281166344245}
+--- !u!114 &2306320281166344245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834644683841509058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59fc7c39e55c6f54a88fb75dee70d76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: a82d16c3502838d488d7a2f1c5231e0d, type: 3}
+  - {fileID: 21300000, guid: f031265c42fb7eb40bcc6c1d8d588080, type: 3}
+  - {fileID: 21300000, guid: 7b6fc05e187a67846a2dc0ce86f2d467, type: 3}
+  - {fileID: 21300000, guid: f031265c42fb7eb40bcc6c1d8d588080, type: 3}
+  framerate: 0.16666667
 --- !u!1 &5894197552569866312
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,8 +215,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.5, y: 1}
+  m_Offset: {x: 0, y: -0.2}
+  m_Size: {x: 1, y: 1}
   m_Direction: 0
 --- !u!114 &745712977545782404
 MonoBehaviour:
@@ -207,6 +243,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5452335481925505290}
   - component: {fileID: 6845280432184267994}
+  - component: {fileID: 6108635532833585120}
+  - component: {fileID: 2396699231834478011}
   m_Layer: 3
   m_Name: Big
   m_TagString: Untagged
@@ -223,7 +261,7 @@ Transform:
   m_GameObject: {fileID: 7625568855511809634}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.15, y: 0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -281,3 +319,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6108635532833585120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625568855511809634}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6c24ac8b87959498b6160950150b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idle: {fileID: 21300000, guid: 66ab77113ff0ef24bb80e1f911e60741, type: 3}
+  jump: {fileID: 21300000, guid: 30a3b31e2418fdb4f81c0ddd04c8b310, type: 3}
+  slide: {fileID: 21300000, guid: da1b3a6aa4de73045ad1d4ced3b3e897, type: 3}
+  run: {fileID: 2396699231834478011}
+--- !u!114 &2396699231834478011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7625568855511809634}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59fc7c39e55c6f54a88fb75dee70d76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 5ce19e6adb9ab9c45b665f2c1195ece7, type: 3}
+  - {fileID: 21300000, guid: b5403d436b67aae49b32c2b931b23c54, type: 3}
+  - {fileID: 21300000, guid: 42092e5a8fbc80346b4bed00313fb143, type: 3}
+  - {fileID: 21300000, guid: 5ce19e6adb9ab9c45b665f2c1195ece7, type: 3}
+  framerate: 0.16666667
