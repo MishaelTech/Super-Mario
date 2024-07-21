@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 7612802528896080934}
   - component: {fileID: 885987334524289693}
   - component: {fileID: -5725859797857261255}
+  - component: {fileID: 8129755164903013181}
+  - component: {fileID: -8397791285276669961}
   m_Layer: 7
   m_Name: Goomba
   m_TagString: Untagged
@@ -114,7 +116,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &7612802528896080934
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -180,3 +182,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   direction: {x: -1, y: 0}
+--- !u!114 &8129755164903013181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4059614745689422990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 216e8c0752f346140b9033b5e917bff0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flatSprite: {fileID: 21300000, guid: 63189914d9cbcac41aefb31f55ab3bb7, type: 3}
+--- !u!114 &-8397791285276669961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4059614745689422990}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535b97bf396729e428f5aed0d3beae0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 1942463281732136652}
+  deadSprite: {fileID: 0}
