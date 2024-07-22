@@ -168,6 +168,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &6109314375268295047
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7208910269877368689}
+  m_Layer: 0
+  m_Name: Bottom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7208910269877368689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6109314375268295047}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7593469667987405976}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7973703516649259953
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,7 +209,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7593469667987405976}
   - component: {fileID: 8168349646003236648}
-  m_Layer: 0
+  - component: {fileID: 4756638974109604449}
+  m_Layer: 2
   m_Name: FlagPole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,6 +233,7 @@ Transform:
   - {fileID: 452435175004945450}
   - {fileID: 3977260368148020462}
   - {fileID: 1672584297128389414}
+  - {fileID: 7208910269877368689}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &8168349646003236648
@@ -248,6 +281,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 10}
   m_EdgeRadius: 0
+--- !u!114 &4756638974109604449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7973703516649259953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc15365aec98d5e45a8f61e4525bff59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flag: {fileID: 452435175004945450}
+  poleBottom: {fileID: 7208910269877368689}
+  castle: {fileID: 0}
+  speed: 6
+  nextWorld: 1
+  nextStage: 1
 --- !u!1001 &2409039545538697492
 PrefabInstance:
   m_ObjectHideFlags: 0

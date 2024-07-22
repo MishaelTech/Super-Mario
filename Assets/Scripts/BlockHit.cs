@@ -31,6 +31,11 @@ public class BlockHit : MonoBehaviour
             spriteRenderer.sprite = emptyBlock;
         }
 
+        if (item != null)
+        {
+            Instantiate(item, transform.position, Quaternion.identity);
+        }
+
         StartCoroutine(Animate());
     }
 
