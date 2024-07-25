@@ -8,7 +8,7 @@ public class FlagPole : MonoBehaviour
     public Transform castle;
     public float speed = 6f;
     public int nextWorld = 1;
-    public int nextStage = 1;
+    public int nextStage = 0;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -32,7 +32,7 @@ public class FlagPole : MonoBehaviour
 
         yield return new WaitForSeconds(2f);
 
-        GameManager.instance.LoadLevel(nextWorld, nextStage);
+        GameManager.instance.LoadLevel(0, 1);
     }
 
     private IEnumerator MoveTo(Transform subject, Vector3 position)

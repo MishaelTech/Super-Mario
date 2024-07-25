@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Application.targetFrameRate = 60;
-        NewGame();
+        //NextLevel();
     }
 
     private void NewGame()
@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
         lives = 3;
         coins = 0;
 
-        LoadLevel(1,1);
+        LoadLevel(0,1);
     }
 
     public void LoadLevel(int world, int stage)
